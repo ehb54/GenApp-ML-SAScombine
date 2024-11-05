@@ -1,0 +1,43 @@
+#########################################
+RUNNING sasmerge.py 
+for instructions: python sasmerge.py -h
+#########################################
+data :
+       dataset2.dat
+       dataset1.dat
+       dataset3.dat
+qmin : 0.004256
+qmax : 2.295000
+N_max: 500
+ref  : /var/www/html/sasmerge/results/653d6808233dc/dataset2.dat
+The results are independent on the choise of reference curve, unless --no_conv is used
+------------------------------------------------------------
+compare dataset2 with output_Merged/merge_Merged.dat
+------------------------------------------------------------
+N of dataset2: 674
+chi2r = 1.2 (dof=669, p=0.002776)
+------------------------------------------------------------
+compare dataset1 with output_Merged/merge_Merged.dat
+------------------------------------------------------------
+N of dataset1: 688
+chi2r = 3.7 (dof=686, p=0.000000)
+WARNING: data may be incompatible (p<0.0001). Rerun with flag --plot_all for visual comparison and residuals
+------------------------------------------------------------
+compare dataset3 with output_Merged/merge_Merged.dat
+------------------------------------------------------------
+N of dataset3: 1225
+chi2r = 1.1 (dof=1223, p=0.012307)
+#########################################
+Converged after 12 iterations
+N in merged data: 454
+Merged data written to file: output_Merged/merge_Merged.dat
+Data sorted after compatibility with merged consensus curve:
+        dataset3.dat: 1.09
+        dataset2.dat: 1.16
+        dataset1.dat: 3.75
+                 sum: 6.00
+#########################################
+sasmerge finished successfully
+output sent to folder output_Merged
+run time: 0.64
+#########################################
